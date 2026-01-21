@@ -4,19 +4,55 @@
     <p>Please fill in this form to create an account for Devops.</p>
     <hr>
      
-    <label for="Name"><b>Enter YOUR Name</b></label>
-    <input type="text" placeholder="Enter Full Name" name="Name" id="Name" required>
-    <label for="mobile"><b>Enter YOUR mobile</b></label>
-    <br>
-    <input type="text" placeholder="Enter moible number" name="mobile" id="mobile" required>
-    <label for="email"><b>Enter YOUR Email</b></label>
-    <br>
-    <input type="text" placeholder="Enter Email" name="email" id="email" required>
-    <label for="psw"><b>Password</b></label>
-    <br>
-    <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
-    <label for="psw-repeat"><b>Repeat Password</b></label>
-    <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+   <form action="#" method="post">
+
+  <label for="name"><b>Enter Your Full Name</b></label><br>
+  <input type="text"
+         id="name"
+         name="name"
+         placeholder="Enter full name"
+         required>
+  <br><br>
+
+  <label for="mobile"><b>Enter Your Mobile Number</b></label><br>
+  <input type="tel"
+         id="mobile"
+         name="mobile"
+         placeholder="Enter 10-digit mobile number"
+         pattern="[0-9]{10}"
+         required>
+  <br><br>
+
+  <label for="email"><b>Enter Your Email</b></label><br>
+  <input type="email"
+         id="email"
+         name="email"
+         placeholder="Enter email address"
+         required>
+  <br><br>
+
+  <label for="psw"><b>Password</b></label><br>
+  <input type="password"
+         id="psw"
+         name="psw"
+         placeholder="Enter password"
+         minlength="6"
+         required>
+  <br><br>
+
+  <label for="psw-repeat"><b>Repeat Password</b></label><br>
+  <input type="password"
+         id="psw-repeat"
+         name="psw-repeat"
+         placeholder="Repeat password"
+         minlength="6"
+         required>
+  <br><br>
+
+  <button type="submit">Register</button>
+
+</form>
+
     <hr>
     <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
     <button type="submit" class="registerbtn">Register</button>
